@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Formalar</title>
+</head>
+
+<body>
+    <form action="/server.php" method="GET">
+        <label for="name">Username</label>
+
+        <!-- labeldagi for bilan inputdagi id bir xil bo'lishi kerak -->
+        <input type="text" name="userName" id="name" placeholder="User"><br><br>
+
+        <!-- labeldagi for bilan inputdagi id bir xil bo'lishi kerak -->
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password"><br><br>
+
+        <!--! 2 - qism -->
+
+        <!-- email turi-->
+        <label for="email">Emailingiz</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <!-- date turi -->
+        <label for="date">Tug'ilgan sanangiz</label>
+        <input type="date" name="date" id="date"><br><br><br>
+        <hr><br>
+
+        <!-- Checbox turi -->
+        <label for="student">Talaba</label>
+        <input type="checkbox" name="student" id="student"><br><br>
+
+        <!-- Chekpoint turi -->
+        <label for="male">Erkak</label>
+        <input type="radio" name="gender" id="male">
+        <label for="famale">Ayol</label>
+        <input type="radio" name="gender" id="famale"><br><br>
+
+        <!-- file turi -->
+        <label for="passport">Passport</label>
+        <input type="file" name="passport" id="passport"><br><br>
+
+        <hr>
+        <br>
+
+        <!-- ! 3 - qism so'ngi -->
+        <!-- * select elementi -->
+
+        <label for="tajriba">Tajribangiz (yil)</label>
+        <select name="experience" id="tajriba">
+            <option value="0">Tajribam yo'q</option>
+            <option value="1">1 yildan kam</option>
+            <option value="2">1 yildan ko'proq</option>
+        </select><br><br>
+
+        <!-- * textarea elementi -->
+        <label for="about">Siz haqingizda</label><br>
+        <textarea name="about" id="about" cols="" rows="10">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, repellendus.
+            Ullam neque ut ea? Ut quibusdam nihil aspernatur iusto quas?
+            Repellendus quisquam incidunt praesentium minima aperiam pariatur ipsum voluptates maxime.
+            Sapiente inventore fuga enim suscipit voluptate, sunt unde eius consequuntur.
+            Mollitia voluptas accusantium iste architecto possimus dignissimos exercitationem nesciunt veritatis.
+            Voluptas veniam ipsa corrupti! Quidem ut accusamus autem voluptates sed.
+            Dignissimos sunt minima accusantium sit ratione quibusdam ipsum veritatis delectus!
+            Quae eius corporis aliquid, ab dolores ullam recusandae ratione. Laudantium?
+            Repellat, tempore veniam autem aspernatur earum amet? Expedita, mollitia recusandae?
+            Vel natus similique, temporibus deleniti ipsam eaque eum repellendus quos.
+        </textarea><br><br>
+
+        <!-- submit bu serverga jo'natish uchun ishlatiladi -->
+        <button type="submit">Register</button>
+    </form>
+</body>
+
+</html>
