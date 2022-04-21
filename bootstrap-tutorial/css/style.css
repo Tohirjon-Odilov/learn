@@ -1,0 +1,9 @@
+#email-input {
+    outline: none;
+    /* border: none; */
+}
+
+.form-control:focus {
+    box-shadow: none;
+    background: none;
+}
