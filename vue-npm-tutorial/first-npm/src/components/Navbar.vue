@@ -15,12 +15,25 @@ export default {
 </script>
 
 <style scoped>
-nav {
+nav{
+    /* margin: 0 70px; */
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li{
+    margin: 0 30px;
+    list-style: none;
 }
 
 nav ul li a {
     text-decoration: none;
-    list-style: none;
+    color: orange;
 }
 </style>
