@@ -11,6 +11,8 @@ import Navbar from './components/Navbar.vue'
 import Footer from './components/Footer.vue'
 import Main from './components/Main.vue'
 export default {
+  created () {
+  },
   watch: {
   },
   name: 'App',
