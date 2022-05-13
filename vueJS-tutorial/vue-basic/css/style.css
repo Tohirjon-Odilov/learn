@@ -1,0 +1,51 @@
+#main {
+    padding: 20px 50px;
+}
+
+.dvider {
+    margin: 20px 30px;
+    border: solid 2px red;
+    padding: 10px;
+}
+
+button {
+    padding: 10px 30px;
+    background: orange;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background: orange;
+}
+
+.row {
+    margin: 50px;
+    border: dashed black 1px;
+}
+
+h1 {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.div {
+    border-top: dashed black 3px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    text-align: end;
+    margin: 20px 10px;
+    color: blueviolet;
+}
+
+.row {
+    background: khaki;
+    border-radius: 5px;
+}

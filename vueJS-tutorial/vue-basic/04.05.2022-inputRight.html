@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <main id="input">
+            <div class="container mt-5">
+                <div class="form-floating mb-3 bg-white">
+                    <input class="form-control" id="email-input"
+                        v-on:keyup="showRightLetter" type="text" maxlength="1"
+                        placeholder="Harf kiriting" v-model="letter">
+                    <label action="email-input">Harf kititing!</label>
+                </div>
+                <p>{{ resultData }}</p>
+                <hr>
+                <!-- <ul v-bind> -->
+                    <!-- <li></li> -->
+                <!-- </ul> -->
+            </div>
+
+        </main>
+
+        <script src="./js/vue.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/04.05.2022-inputRight.js"></script>
+    </body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Order</title>
+</head>
+
+<body>
+    <main id="order">
+        <div class="container my-5">
+
+            <!-- ! checkbox -->
+
+            <div class="row">
+                <div class="col-4 mx-auto">
+                    <input v-model="lorem" id="check" type="checkbox" value="checked"> <label for="check">Lorem</label>
+                    <h6 v-if="lorem">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quas iure quisquam quaerat dicta est, nulla iusto ullam eius itaque quae temporibus asperiores illum. Sequi iste ducimus ad minima quae!
+                    </h6>
+                </div>
+                <div class="col-4 mx-auto">
+                    <input v-model="text" id="text" type="checkbox"> <label for="text">Text</label>
+                    <h6 v-if="text">
+                        <b>Ipsum</b> dolor sit amet consectetur adipisicing elit. <br> Aspernatur quas iure quisquam quaerat dicta est, nulla iusto ullam eius itaque quae temporibus asperiores illum. Sequi iste ducimus ad minima quae!
+                    </h6>
+                </div>
+                <div class="col-4 mx-auto">
+                    <input v-model="poem" id="poem" type="checkbox"> <label for="poem">Poem</label>
+                    <h6 v-if="poem">
+                        Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. <br> Aspernatur quas iure <br> quisquam quaerat <br> dicta est, nulla iusto <br> ullam eius itaque <br> quae temporibus asperiores <br> illum. Sequi <br> iste ducimus
+                        ad minima quae!
+                    </h6>
+                </div>
+
+            </div>
+
+            <!-- ! Radio -->
+
+            <div class="row">
+                <div class="col-md-4">
+                    <input type="radio" name="lang" id="html" :value="html" v-model="radio">
+                    <label for="html">HTML => ?</label>
+                </div>
+                <div class="col-md-4">
+                    <input type="radio" name="lang" id="css" :value="css" v-model="radio">
+                    <label for="css">CSS => ?</label>
+                </div>
+                <div class="col-md-4">
+                    <input type="radio" name="lang" id="js" :value="js" v-model="radio">
+                    <label for="js">JAVASCRIPT => ?</label>
+                </div>
+
+                <h2>{{radio}}</h2>
+            </div>
+
+
+            <!-- ? Darsdagi kodalar @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+
+
+            <!--  ? Vazifa -->
+            <div class="row">
+                <h1>Vazifa</h1>
+
+                <!-- ! task - 1 -->
+
+                <div class="col-12">
+                    <h3>Task - 1</h3>
+                    <div class="form-floating mb-3 bg-white">
+                        <input v-on:keyup="changeToSelsiy" v-model="farangeyt" type="text" class="form-control" id="text-input" placeholder="text">
+                        <label for="text-input">Haroratni farangeytda kiriting va natijani selsiyda oling. </label>
+                    </div>
+                    <div class="div">
+                        <h2>Selsiy => {{toSelsiy}}°C</h2>
+                    </div>
+                </div>
+
+                <!-- ! task - 2 -->
+
+                <div class="col-12">
+                    <h3>Task - 2</h3>
+                    <h1 class="text-capitalize text-info">Raqamni taxmin qil!</h1>
+                    <div class="form-floating mb-3 bg-white">
+                        <input type="number" min="0" max="100" class="form-control" id="random" placeholder="text" v-model="userNumber">
+                        <label for="random">1 dan 100 gacha bo'lgan istlagan sonni kiriting!</label>
+                    </div>
+                    <div class="btn mb-3 btn-danger" @click="mathRandom">Random</div>
+                    <div class="btn mb-3 btn-danger" @click="taxmin">Tekshirish</div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="./js/vue.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="./js/order.js"></script>
+</body>
+
+</html>

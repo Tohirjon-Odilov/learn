@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            .box{
+                width: 100%;
+                height: 300px;
+                background: khaki;
+                border-radius: 10px;
+                display: flex;
+                flex-wrap: wrap-reverse;
+                overflow:hidden;
+            }
+            li{
+                /* display: flex; */
+                /* flex-wrap: wrap-reverse; */
+                margin: 5px;
+            }
+        </style>
+        <title>Operator</title>
+    </head>
+    <body>
+
+        <main id="operator">
+            <div class="mt-5 container">
+                <div class="row">
+                    <div class="col-3">Beeline: <span>{{ beeline }}</span></div>
+                    <div class="col-3">Mobiuz: <span>{{ mobiuz }}</span></div>
+                    <div class="col-3">Ucell: <span>{{ ucell }}</span></div>
+                    <div class="col-3">Uzmobile: <span>{{ uzmobile }}</span></div>
+                </div>
+                <div class="mt-5 row">
+                    <h1>Number: +998 9<span>{{relPhone}}</span></h1>
+                    <div @click="getNumber" class="mt-5 btn btn-danger">Get
+                        Number</div>
+                </div>
+                <div class="my-4 row">
+                    <div class="mx-auto box">
+                        <ol class="m-2">
+                            <li class="mt-1" v-for="x in allPhone">
+                                +998 9{{ x }}
+                            </li>
+                        </ol>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+
+        <script src="js/vue.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/operator.js"></script>
+    </body>
+</html>

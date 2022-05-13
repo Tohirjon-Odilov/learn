@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <main id="input">
+        <!-- <div class="p-5 w-50 mt-5 mx-auto card">
+            <h1>{{ result }}</h1>
+            <input type="text" class="m-2 btn-info input-group-text" v-model="qiymat">
+            <input type="text" class="m-2 btn-danger input-group-text" v-model="qiymatt">
+            <div class="btn btn-danger" @click="natija">Tugma</div>
+        </div> -->
+
+        <!-- ! Task - 2  -->
+
+        <!-- <div class="p-5 w-50 mt-5 mx-auto card">
+            <input type="text" class="m-2 btn-success input-group-text" v-model="changeNum1">
+            <input type="text" class="m-2 btn-dark input-group-text" v-model="changeNum2">
+            <div class="btn btn-danger" @click="plus">Tugma</div>
+        </div> -->
+
+        <!-- ! task - 3 -->
+
+        <!-- <div class="container mt-5 mb-5">
+            <div class="row">
+                <div class="col card">
+                    <h1 class="h-100 ">{{ letter }}</h1>
+                    <input type="text" v-model="letter" @keyup="checkLetter" class="my-5 input-group-text">
+                </div>
+            </div>
+        </div> -->
+
+        <!-- ! task - 4 -->
+
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-12 ">
+                    <div class="form-floating my-3 bg-white">
+                        <input type="text" v-model="name" class="form-control" id="content-input" placeholder="Ism" value="">
+                        <label action="content-input">To'liq ismingizni kiriting.</label>
+                    </div>
+                    <h3>Name: <span>{{ism}}</span></h3>
+                    <h3>Surname: <span>{{familiya}}</span></h3>
+                    <h3>Father: <span>{{ota}}</span></h3>
+                    <div class="offset-9 px-4 btn btn-success" @click="split()">Tugma bosilsin</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- task - 5 -->
+
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-12 ">
+                    <div class="form-floating my-3 bg-white">
+                        <input type="text" v-model="age" class="form-control" id="content-input" placeholder="Ism" value="">
+                        <label action="content-input">Yoshingizni kiriting?</label>
+                    </div>
+                    <h3>{{agee}}</h3>
+                    <div class="offset-9 px-4 btn btn-success" @click="agea">Tugma bosilsin</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- task - 6 -->
+
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-12 ">
+                    <div class="form-floating my-3 bg-white">
+                        <input type="content" v-model="text" class="form-control" id="content-input" @keyup="teskari" placeholder="content">
+                        <label action="content-input">Matn kiriting!</label>
+                    </div>
+                    <h3>Teskari: {{result}}</h3>
+                    <div class="offset-9 px-4 btn btn-success">Tugma bosilsin</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 20/04/2022 -->
+
+
+
+
+    </main>
+
+    <script src="./js/vue.js"></script>
+    <script src="./js/input.js"></script>
+    <!-- <script src="./js/bootstrap.min.js"></script> -->
+</body>
+
+</html>
