@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>The Document Object</h1>
+    <h2>The createElement() Method</h2>
+
+    <!-- <p>Create a p element and append it to "myDiv":</p>
+
+    <ol id="ul" style="padding:16px;background-color:lightgray">
+        <h3>A DIV element</h3>
+        </> -->
+
+    <ul id="ul">
+        <li>Li tegi</li>
+    </ul>
+
+    <script>
+        // document.body.onclick = function() {
+        //     // Create element:
+        //     const li = document.createElement("li");
+        //     li.innerHTML = "This is a paragraph.";
+
+        //     // Append to another element:
+        //     document.getElementById("ul").appendChild(li);
+        // }
+
+        // let ul = document.querySelector("ul");
+        const li = document.createElement("p");
+        li.innerHTML = "Bu yerda yangi li tegi chiqdi.";
+
+        document.getElementById("ul").appendChild(li);
+    </script>
+
+</body>
+
+</html>
